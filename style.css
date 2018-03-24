@@ -1,32 +1,55 @@
 
-#preloader {
-  background-color: #000;
-  height: 100%;
+#loaderSvgWrapper{
   position: fixed;
-  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #011;
   z-index: 1100;
 }
-
-#preloader > img {
-  left: 32%;
+#preLoader{
   position: absolute;
-  top: 18%;
-
+  top: 50%;
+  left: 45%;
 }
-@media (min-width: 640px) {
-  #preloader > img {
-  position: absolute;
-  
-    }}
+path{
+  fill: #f00;
+  stroke: #f00;
+}
+#T1{
+  animation: visible 2s ease .2s infinite;
+}
+#T2{
+  animation: visible 2s ease .4s infinite;
+}
+#T3{
+  animation: visible 2s ease .6s infinite;
+}
+#T4{
+  animation: visible 2s ease .8s infinite;
+}
+#T5{
+  animation: visible 2s ease 1s infinite;
+}
+#T6{
+  animation: visible 2s ease 1.2s infinite;
+}
+@keyframes visible {
+  0%{
+    opacity: 1;
+    stroke-opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    stroke-opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    stroke-opacity: 1;
+  }
+}
 
-@media (min-width: 640px) {
-  #preloader{
-    background-color: #000;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 1100;
-    }}
 body{
 
 background: url(img/bgk.gif);
